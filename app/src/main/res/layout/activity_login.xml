@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:background="#fff110"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo4"
+        android:transitionName="logo_image"
+        android:layout_marginTop="-20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello there, Welcome to sCarRentals"
+        android:textSize="30sp"
+        android:fontFamily="@font/berkshire_swash"
+        android:textColor="#000"
+        android:layout_marginTop="-20dp"
+        android:transitionName="logo_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In to continue"
+        android:textSize="18sp"
+        android:layout_marginTop="5dp"
+        android:transitionName="logo_desc"
+        android:fontFamily="@font/antic"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:orientation="vertical"/>
+
+    <EditText
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/email_icon"
+        android:hint="Email"
+        android:textColor="#000"
+        android:id="@+id/emailId"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:inputType="textPassword"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:drawableLeft="@drawable/lock"
+        android:hint="Password"
+        android:textColor="#000"
+        android:id="@+id/passwordId"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content" />
+
+
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:textColor="#000"
+        android:text="Forget Password"
+        android:layout_gravity="right"
+        android:elevation="0dp"
+        android:layout_margin="5dp"/>
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign in"
+        android:background="#000000"
+        android:textColor="#ffffff"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <Button
+        android:id="@+id/signup_screen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:text="New User? SIGN UP"
+        android:layout_gravity="right"
+        android:elevation="0dp"
+        android:layout_margin="5dp"
+        android:fontFamily="@font/antic"
+        android:textColor="#000"/>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:id="@+id/progressbarId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

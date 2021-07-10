@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="#C3D602">
+
+    <TextView
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Car Name: Toyota"
+        android:id="@+id/nametextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Car Number Id: 123456"
+        android:id="@+id/carnumbertextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:text="Value/Price: 500 tk. per hour"
+        android:id="@+id/carvaluetextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+</LinearLayout>

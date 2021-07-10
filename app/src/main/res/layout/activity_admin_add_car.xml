@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Admin_AddCar"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add New Car Here"
+        android:layout_marginTop="25dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="#000"/>
+    <EditText
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"
+        android:hint="Enter Car Name"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/addcarnameId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_marginTop="15dp"
+        android:textStyle="italic"
+        android:hint="Enter Car Id number"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/addcaridnumberId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <EditText
+        android:textStyle="italic"
+        android:layout_marginTop="15dp"
+        android:hint="Value/Price"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+        android:id="@+id/car_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_marginTop="15dp"
+        android:text="Add Car"
+        android:id="@+id/addcarbuttonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
