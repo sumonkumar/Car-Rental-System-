@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Payment">
+    <ImageView
+        android:id="@+id/bkashImage"
+        android:layout_width="250dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bkash"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:id="@+id/bTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pay With Bkash"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginTop="15dp"/>
+    <EditText
+        android:id="@+id/bkashName"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/bkashPhone"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Phone No"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:inputType="number"/>
+
+
+    <EditText
+        android:id="@+id/bkashAmount"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Amount"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/bkashPassword"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:inputType="textPassword"/>
+    <TextView
+        android:id="@+id/bkashMarchent"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Marchent(Agent): 01992329831"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:textStyle="normal"/>
+    <Button
+        android:id="@+id/bkashPay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Pay Now"
+        android:textColor="#000"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"/>
+
+</LinearLayout>

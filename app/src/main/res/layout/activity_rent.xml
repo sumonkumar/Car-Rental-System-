@@ -4,11 +4,109 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:background="#000"
+    android:orientation="vertical"
     tools:context=".Rent">
-<TextView
-    android:id="@+id/rent"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Rent"/>
+
+    <TextView
+        android:id="@+id/uploaderTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:fontFamily="serif"
+        android:text="Car Details"
+        android:textColor="#EEFF00"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+    <TextView
+        android:id="@+id/carName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#EEFF00"
+        android:textColorHighlight="#E8E6E6"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/carNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#EEFF00"
+        android:textColorHighlight="#E8E6E6"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"/>
+
+    <TextView
+        android:id="@+id/carPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#EEFF00"
+        android:textColorHighlight="#E8E6E6"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"/>
+
+    <EditText
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/date"
+        android:hint="Select Date"
+        android:textSize="20sp"
+        android:drawableLeft="@drawable/date"
+        android:textColor="#EEFF00"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColorHint="#EEFF00"/>
+
+    <EditText
+        android:id="@+id/time"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Rent time (hour)"
+        android:drawableLeft="@drawable/time"
+        android:textColor="#EEFF00"
+        android:textColorHint="#EEFF00"
+        android:inputType="number"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/cost"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:text="See total cost (BDT)"
+        android:textColor="#EEFF00"
+        android:textSize="20sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"/>
+
+
+    <Button
+        android:id="@+id/rentCar"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#000"
+        android:text="Pay and Rent car"
+        android:textColor="#050505"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:backgroundTint="#EEFF00"/>
 </LinearLayout>

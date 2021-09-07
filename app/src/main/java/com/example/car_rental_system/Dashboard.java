@@ -39,7 +39,7 @@ public class Dashboard extends AppCompatActivity {
         card_car.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dashboard.this,User_ShowCar.class);
+                Intent intent = new Intent(Dashboard.this,test_car_show.class);
                 startActivity(intent);
             }
         });

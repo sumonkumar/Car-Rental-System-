@@ -8,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -22,18 +23,18 @@ import org.jetbrains.annotations.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Admin_ShowCar extends AppCompatActivity {
+public class test_car_show extends AppCompatActivity {
 
     private Context context;
     RecyclerView recyclerView;
     DatabaseReference databaseReference;
-    private List<Car> carList;
-    TestAdapter testAdapter;
+    private List<User_Car> carList;
+    User_CustomAdapter user_customAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_admin_show_car);
+        setContentView(R.layout.activity_test_car_show);
 
         recyclerView = findViewById(R.id.recyclerviewid);
         carList = new ArrayList<>();
@@ -47,21 +48,19 @@ public class Admin_ShowCar extends AppCompatActivity {
                 carList.clear();
 
                 for (DataSnapshot snapshot1: snapshot.getChildren()) {
-                    Car car = snapshot1.getValue(Car.class);
+                    User_Car car = snapshot1.getValue(User_Car.class);
                     carList.add(car);
                 }
-                testAdapter = new TestAdapter(Admin_ShowCar.this,carList);
-                recyclerView.setAdapter(testAdapter);
+                user_customAdapter = new User_CustomAdapter(test_car_show.this,carList);
+                recyclerView.setAdapter(user_customAdapter);
 
                 recyclerView.setLayoutManager(layoutManager);
 
-                testAdapter.setOnItemClickListener(new TestAdapter.ClickListener() {
+                user_customAdapter.setOnItemClickListener(new User_CustomAdapter.ClickListener() {
                     @Override
                     public void onItemClick(int position, View v) {
 
                         Toast.makeText(getApplicationContext(),"Item clicked : "+position,Toast.LENGTH_LONG).show();
-                        //Intent intent = new Intent(context,Rent.class);
-                        //context.startActivity(intent);
                     }
 
                     @Override
@@ -69,7 +68,7 @@ public class Admin_ShowCar extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(),"Item Long clicked : "+position,Toast.LENGTH_LONG).show();
                     }
                 });
-            }
+    }
 
             @Override
             public void onCancelled(@NonNull @NotNull DatabaseError error) {

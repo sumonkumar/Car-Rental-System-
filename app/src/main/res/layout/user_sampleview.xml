@@ -1,42 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:padding="10dp"
-    android:background="#FFEB3B">
+    android:layout_height="wrap_content"
+    android:background="#CDDC39">
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:text="Car Name: Toyota"
+        android:id="@+id/nametextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <TextView
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:text="Car Number Id: 123456"
+        android:id="@+id/carnumbertextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+    <TextView
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="Value/Price: 500 tk. per hour"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/carvaluetextviewid"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
 
     <TextView
         android:padding="5dp"
-        android:gravity="center_vertical"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="Car Name: Toyota"
-        android:id="@+id/user_car_name_sample"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-    <TextView
-        android:padding="5dp"
-        android:gravity="center_vertical"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="Car Number Id: 123456"
-        android:id="@+id/user_car_no_sample"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-    <TextView
-        android:padding="5dp"
-        android:gravity="center_vertical"
-        android:textStyle="bold"
-        android:textSize="20sp"
-        android:text="Value/Price: 500 tk. per hour"
-        android:id="@+id/user_car_value_sample"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"/>
-    <Button
-        android:id="@+id/rent"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="80dp"
+        android:layout_height="32dp"
+        android:gravity="center_horizontal"
         android:text="Rent"
-        android:padding="10dp"
-        android:layout_marginLeft="10dp"/>
+        android:textAlignment="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginBottom="12dp"
+        android:textSize="19sp"
+        android:background="#4CAF50"
+        android:layout_marginTop="5dp"
+        android:textColor="#fff"
+        android:fontFamily="@font/antic"/>
 </LinearLayout>
